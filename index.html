@@ -4,36 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Start of header page -->
-    <header>
+    <header id="section-a">
     <!-- Start of Navigation bar -->
-       <nav>
-           <ul>
-               <li>Home</li>
-               <li>Our Story</li>
-               <li>Wedding</li>
-               <li>Getting there</li>
-               <li>FAQs</li>
-           </ul>
-       </nav>
+       
+    <nav id="navbar">
+        <div id="navItems">
+        
+        <div id="navy">
+        <span class="navtab" onclick="homeCloseNav()">Home</span>
+        <span class="navtab" onclick="aboutCloseNav()">Our Story</span>
+        <span class="navtab" onclick="portCloseNav()">Wedding</span>
+        <span class="navtab" onclick="contactCloseNav()">Getting There</span>
+        <span class="navtab" onclick="contactCloseNav()">FAQs</span>
+        </div>
+        
+        <span id="open-overlay" onclick="openNav()"><img id="burger" src="/images/burger-menu.png" alt="burger-menu"></span>
+        </div>
+    </nav>
 
-       <section>
+    <div id="myNav" class="overlay">
+        <a id="closeB" href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <span class="over-menu" onclick="aboutCloseNav()">About</span>
+        <span class="over-menu" onclick="portCloseNav()">Product Portfolio</span>
+        <span class="over-menu" onclick="contactCloseNav()">Contact</span>
+        
+    </div>   
+    </div>  
+
+        
+       <section id="topper">
            <h1>Marco and Khing</h1>
            <h1>#KEMEKEME</h1>
            <h3>April 9, 2022 11:00 AM | Lola Cafe </h3>
        </section>
-
+       
     </header>
     <!-- end of header section -->
 
     <!-- start of main section -->
     <main>
         <!-- start of our story section -->
-        <section>
+        <section id="section-b">
             <h2>Our Story</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Unde fugit neque tempore enim nemo voluptate corrupti temporibus nisi ipsa! 
@@ -61,5 +81,8 @@
     </main>
 
     <footer></footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ------- end of base styles -------------- */
+
+/* --------- start of nav bar ------------ */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.overlay .over-menu,
+#closeB {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: all 0.3s ease 0s;
+}
+
+.overlay .over-menu:hover,
+.overlay .over-menu :focus {
+    color: #f1f1f1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 45px;
+}
+
+.sticky {
+    position: fixed;
+    background: #fffff0;
+    box-shadow: 0 10px 6px -6px #777;
+    transition: background-color 1s ease 0s;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+#open-overlay {
+    top: 0.5rem;
+    left: 40%;
+    cursor: pointer;
+    position: relative;
+}
+
+#burger {
+    position: relative;
+    top: -0.5rem;
+    width: 60px;
+}
+
+#burger img {
+    transition: all 0.3s ease 0s;
+}
+
+span:hover,
+span:focus {
+    opacity: 0.6;
+}
+
+#navy {
+    display: none;
+}
+
+/* ------------ end of nav bar ------------- */
+
+/* ------------ start of header --------- */
+
+#section-a {
+    height: 80vh;
+    background-image: url("images/main-backdraft.jpg");
+    background-size: cover;
+
+}
+
+#topper {
+    margin-top: 6rem;
+    color: #f1f1f1;
+    font-size: 1.3rem;
+}
+
+#burger {
+    margin-top: 1.2rem;
+}
+
+/* ----------- end of header ------------------ */
