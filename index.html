@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,7 +21,6 @@
         <div id="navy">
         <span class="navtab" onclick="homeCloseNav()">Home</span>
         <span class="navtab" onclick="aboutCloseNav()">Our Story</span>
-        <span class="navtab" onclick="portCloseNav()">Wedding</span>
         <span class="navtab" onclick="contactCloseNav()">Getting There</span>
         <span class="navtab" onclick="contactCloseNav()">FAQs</span>
         </div>
@@ -33,9 +33,10 @@
         <a id="closeB" href="javascript:void(0)" class="closebtn"
         onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <span class="over-menu" onclick="aboutCloseNav()">About</span>
-        <span class="over-menu" onclick="portCloseNav()">Product Portfolio</span>
-        <span class="over-menu" onclick="contactCloseNav()">Contact</span>
+        <span class="over-menu" onclick="homeCloseNav()">Home</span>
+        <span class="over-menu" onclick="storyCloseNav()">Our Story</span>
+        <span class="over-menu" onclick="gettingCloseNav()">Getting There</span>
+        <span class="over-menu" onclick="faqsCloseNav()">FAQs</span>
         
     </div>   
     </div>  
@@ -43,8 +44,9 @@
         
        <section id="topper">
            <h1>Marco and Khing</h1>
-           <h1>#KEMEKEME</h1>
-           <h3>April 9, 2022 11:00 AM | Lola Cafe </h3>
+           <h2>#KEMEKEME</h2>
+           <h3 id="dt">April 9, 2022 11:00 AM | Lola Cafe </h3>
+           
        </section>
        
     </header>
@@ -55,32 +57,68 @@
         <!-- start of our story section -->
         <section id="section-b">
             <h2>Our Story</h2>
+            <h3>WE ARE GETTING MARRIED!!</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Unde fugit neque tempore enim nemo voluptate corrupti temporibus nisi ipsa! 
                 Voluptatibus ex nihil accusamus fugit esse ut nam dolore id atque?</p>
         </section>
         <!-- end of our story section -->
-        
-        <!-- start of wedding section (invitation)-->
-        <section>
 
+        <!-- start of gallery section (carousel) -->
+        <section id="section-c">
+            
         </section>
-        <!-- end of wedding section (invitation)-->
+        <!-- end of gallery section (carousel)-->
+        
+    
 
         <!-- start of getting there section-->
-        <section>
-            <h1>Getting There</h1>
+        <section id="section-d">
+            <h2>Getting There</h2>
+            <h3>Ceremony and Reception</h3>
+            <p>99 Scout Lozano St., Quezon City (Tomas Morato)</p>
         </section>
         <!-- end of getting there section-->
 
         <!-- start of FAQs section -->
-        <section>
+        <section id="section-e">
             <h1>FAQs</h1>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt delectus 
+                corrupti libero dolor, vel doloremque nihil, corporis nemo tenetur provident, 
+                sit tempore consequatur suscipit. Quae iusto dolorum minima ducimus?</p>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt delectus 
+                corrupti libero dolor, vel doloremque nihil, corporis nemo tenetur provident, 
+                sit tempore consequatur suscipit. Quae iusto dolorum minima ducimus?</p>
+            
         </section>
         <!-- end of FAQs section-->
+
+        <!-- start invite message -->
+        <section id="section-f">
+            <h3>WE'RE SO EXCITED</h3>
+            <h3>TO CELEBRATE WITH YOU</h3>
+            <h3>SEE YOU!</h3>
+
+        </section>
+        <!-- end of invite message -->
+
+        <!-- start of scroll back to top button -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!-- end of scroll back to top button -->
     </main>
 
-    <footer></footer>
+    <footer>
+        <section id="section-g">
+            <h3>#KEMEKEME</h3>
+            <p>&copy; by Marco & Khing</p>
+
+        </section>
+
+    </footer>
 
     <script src="index.js"></script>
 

@@ -34,7 +34,7 @@ body {
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .overlay .over-menu,
@@ -67,9 +67,6 @@ body {
 
 .sticky {
     position: fixed;
-    background: #fffff0;
-    box-shadow: 0 10px 6px -6px #777;
-    transition: background-color 1s ease 0s;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -105,6 +102,8 @@ span:focus {
     display: none;
 }
 
+
+
 /* ------------ end of nav bar ------------- */
 
 /* ------------ start of header --------- */
@@ -117,9 +116,16 @@ span:focus {
 }
 
 #topper {
-    margin-top: 6rem;
+
     color: #f1f1f1;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 7.5rem 1.2rem 0 1.2rem;
+    z-index: 1;
+
+}
+
+#dt {
+    margin: 1.2rem 2rem 0 2rem;
 }
 
 #burger {
@@ -127,3 +133,84 @@ span:focus {
 }
 
 /* ----------- end of header ------------------ */
+
+/* ----------- start of Our story section ---------------- */
+
+#section-b {
+    margin: 3rem 1.2rem 3rem 1.2rem;
+}
+
+#section-b h2,
+#section-b h3 {
+    margin-bottom: 2rem;
+}
+
+/* --------------- end of Our story section ----------------- */
+
+/* ----------------  start of gallery (carousel) -------------- */
+
+#section-c {
+    height: 50vh;
+    background-image: url("/images/gallery-1.jpg");
+    background-size: cover;
+}
+
+/* ------------- end of gallery (carousel) -------------- */
+
+/* ------------- start of getting there --------------------- */
+
+#section-d {
+    margin: 3rem 1.2rem 3rem 1.2rem;
+}
+
+#section-d h2,
+#section-d h3 {
+    margin-bottom: 1.5rem;
+}
+
+/* ------------- end of getting there ------------------------ */
+
+/* -------------- start of FAQs ----------------------- */
+#section-e {
+    margin: 3rem 1.2rem 3rem 1.2rem
+}
+
+
+/* -------------- end of FAQs -------------------------- */
+
+/* --------------- start of invite greet ------------------------- */
+
+#section-f {
+    background-color: #c08081;
+    padding: 1.5rem 0 1.2rem 0;
+}
+
+/* --------------- end of invite greet --------------------- */
+
+/*-------------- start of scroll to top button ---------------- */
+
+#myBtn {
+    display: "none";
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* ---------------- end of scroll to top button -------------------- */
+/* ---------------- start of footer ------------------- */
+
+#section-g {
+    margin: 1rem 1.2rem 1rem 1.2rem
+}

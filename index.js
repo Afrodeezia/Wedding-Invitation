@@ -14,20 +14,20 @@ function closeNav() {
     
   }
 
-  function aboutCloseNav() {
-    window.scrollTo(0,125);
+  function storyCloseNav() {
+    window.scrollTo(0,600);
     document.getElementById("myNav").style.width = "0%";
     
   }
 
-  function portCloseNav() {
-    window.scrollTo(0,500);
+  function gettingCloseNav() {
+    window.scrollTo(0,1300);
     document.getElementById("myNav").style.width = "0%";
     
   }
 
-  function contactCloseNav() {
-    window.scrollTo(0,965);
+  function faqsCloseNav() {
+    window.scrollTo(0,1500);
     document.getElementById("myNav").style.width = "0%";
     
   }
@@ -63,3 +63,23 @@ function scrollWin(){
 
 //----------------- NAVIGATION BUTTONS --------------------------
 
+//----------------- SCROLL TOP TOP BUTTON -----------------------
+
+
+window.onscroll = function() {
+  scrollFunction();
+}
+
+function scrollFunction() {
+  if(document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200){
+    
+    document.getElementById("myBtn").style.display = "block";
+  }else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
