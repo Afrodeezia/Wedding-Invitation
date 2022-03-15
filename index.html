@@ -4,65 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <!-- Start of header page -->
-    <header id="section-a">
+    
     <!-- Start of Navigation bar -->
        
-    <nav id="navbar">
-        <div id="navItems">
-        
-        <div id="navy">
-        <span class="navtab" onclick="homeCloseNav()">Home</span>
-        <span class="navtab" onclick="aboutCloseNav()">Our Story</span>
-        <span class="navtab" onclick="contactCloseNav()">Getting There</span>
-        <span class="navtab" onclick="contactCloseNav()">FAQs</span>
+   <header id="section-a">
+      
+    <nav>
+        <div class="menu-icon">
+          <span></span>
         </div>
-        
-        <span id="open-overlay" onclick="openNav()"><img id="burger" src="/images/burger-menu.png" alt="burger-menu"></span>
+      </nav>
+      
+      <section class="overlay-menu">
+        <div class="container">
+          <div class="row">
+            <div class="columns half">
+              <h2>Menu left</h2>
+              <ul>
+                <li>About Us</li>
+                <li>Our Work</li>
+                <li>Contact Us<li>
+              </ul>
+            </div>
+            <div class="columns half">
+              <h2>Menu Right</h2>
+              <ul>
+                <li>More Menus</li>
+                <li>Log In</li>
+                <li>Do Something<li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <div id="myNav" class="overlay">
-        <a id="closeB" href="javascript:void(0)" class="closebtn"
-        onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        <span class="over-menu" onclick="homeCloseNav()">Home</span>
-        <span class="over-menu" onclick="storyCloseNav()">Our Story</span>
-        <span class="over-menu" onclick="gettingCloseNav()">Getting There</span>
-        <span class="over-menu" onclick="faqsCloseNav()">FAQs</span>
+      </section>
+    
         
-    </div>   
-    </div>  
-
         
-       <section id="topper">
-           <h1>Marco and Khing</h1>
-           <h2>#KEMEKEME</h2>
+       <section id="bdaft">
+        <img src="images/main-backdraft.jpg" alt="main-backdraft" id="mbdaft">
+        <div id="topper">
+           <h1>MARCO & KHING</h1>
            <h3 id="dt">April 9, 2022 11:00 AM | Lola Cafe </h3>
-           
+        </div>
        </section>
-       
-    </header>
+   </header>
+    
     <!-- end of header section -->
 
     <!-- start of main section -->
     <main>
         <!-- start of our story section -->
         <section id="section-b">
-            <h2>Our Story</h2>
-            <h3>WE ARE GETTING MARRIED!!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Unde fugit neque tempore enim nemo voluptate corrupti temporibus nisi ipsa! 
-                Voluptatibus ex nihil accusamus fugit esse ut nam dolore id atque?</p>
+            <h2>WE ARE GETTING MARRIED!!</h2>
+            <p>We are thrilled to announce that we will officially tie the knot and 
+                become husband and wife in a beautiful intimate ceremony surrounded by our 
+                immediate families.</p>
+
+            <p>We are so grateful for the love and support of all our friends and 
+                family and can't wait to celebrate with you.</p>
         </section>
         <!-- end of our story section -->
+
+        <!-- start of invitation  -->
+            <section id="invi">
+                <img src="images/invitation.png" alt="invitation" class="responsive">
+
+            </section>
+        <!-- end of invitation -->
 
         <!-- start of gallery section (carousel) -->
         <section id="section-c">
@@ -76,30 +94,27 @@
         <section id="section-d">
             <h2>Getting There</h2>
             <h3>Ceremony and Reception</h3>
+            <p>Lola Cafe</p>
             <p>99 Scout Lozano St., Quezon City (Tomas Morato)</p>
+
+            <h3>Gentle Reminder</h3>
+            <p>Safety First. Please arrive an hour early as there will 
+                be free onsite covid testing. </p>
+
+            <h3>In lieu of Gifts</h3>
+            <p>In lieu of traditional gifts, monetary gifts are graciously accepted</p>
+
         </section>
         <!-- end of getting there section-->
 
-        <!-- start of FAQs section -->
-        <section id="section-e">
-            <h1>FAQs</h1>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt delectus 
-                corrupti libero dolor, vel doloremque nihil, corporis nemo tenetur provident, 
-                sit tempore consequatur suscipit. Quae iusto dolorum minima ducimus?</p>
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt delectus 
-                corrupti libero dolor, vel doloremque nihil, corporis nemo tenetur provident, 
-                sit tempore consequatur suscipit. Quae iusto dolorum minima ducimus?</p>
-            
-        </section>
-        <!-- end of FAQs section-->
+    
 
         <!-- start invite message -->
         <section id="section-f">
             <h3>WE'RE SO EXCITED</h3>
             <h3>TO CELEBRATE WITH YOU</h3>
             <h3>SEE YOU!</h3>
+            <h3>#KEMEKEME</h3>
 
         </section>
         <!-- end of invite message -->
@@ -113,14 +128,14 @@
 
     <footer>
         <section id="section-g">
-            <h3>#KEMEKEME</h3>
-            <p>&copy; by Marco & Khing</p>
+            <p>&copy;2022 Marco Roldan</p>
 
         </section>
 
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 </html>

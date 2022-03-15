@@ -3,103 +3,149 @@
     margin: 0;
     text-align: center;
     scroll-behavior: smooth;
+
 }
 
 html,
 body {
     width: 100%;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #36454F;
+    background-color: #F3EDE0;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    color: #745D20;
 }
 
 /* ------- end of base styles -------------- */
 
 /* --------- start of nav bar ------------ */
 
-.overlay {
-    height: 100%;
-    width: 0;
+nav {
+    background: #9a5250;
+    color: #2e2e2e;
+    font-size: 0.2rem;
     position: fixed;
-    z-index: 1;
+    width: 100%;
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    transition: 0.5s;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 200;
 }
 
-.overlay-content {
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 250px;
-}
-
-.overlay .over-menu,
-#closeB {
-    padding: 8px;
+.menu-icon {
+    background: #007482;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 auto;
+    position: relative;
     cursor: pointer;
-    font-size: 2rem;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    transition: all 0.3s ease 0s;
+    transition: background 0.5s;
 }
 
-.overlay .over-menu:hover,
-.overlay .over-menu :focus {
-    color: #f1f1f1;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 35px;
+    background: white;
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 45px;
+    left: 15%;
+    top: 50%;
+    display: block;
+    content: '';
+    transition: all 0.5s ease-in-out;
 }
 
-.sticky {
-    position: fixed;
+.menu-icon span:before {
+    left: 0;
+    top: -10px;
+}
+
+.menu-icon span:after {
+    left: 0;
+    top: 10px;
+}
+
+.menu-icon.active {
+    background: #304453;
+}
+
+.menu-icon.active span {
+    background-color: transparent;
+}
+
+.menu-icon.active span:before,
+.menu-icon.active span:after {
     top: 0;
+}
+
+.menu-icon.active span:before {
+    transform: rotate(135deg);
+}
+
+.menu-icon.active span:after {
+    transform: rotate(-135deg);
+}
+
+/* Menu */
+
+.overlay-menu {
+    background: rgba(48, 68, 83, 0.9);
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
-    z-index: 2;
+    padding: 50px 0;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.5s;
 }
 
-.sticky+.content {
-    padding-top: 60px;
+.overlay-menu.open {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
-#open-overlay {
-    top: 0.5rem;
-    left: 40%;
-    cursor: pointer;
-    position: relative;
+.overlay-menu .columns {
+    transform: translateY(5%);
+    opacity: 0;
+    transition: all 0.4s;
+    transition-delay: 0s;
 }
 
-#burger {
-    position: relative;
-    top: -0.5rem;
-    width: 60px;
+.overlay-menu.open .columns {
+    transition: all 1s;
+    transition-delay: 1s;
+    opacity: 1;
+    transform: translateY(0%);
 }
 
-#burger img {
-    transition: all 0.3s ease 0s;
+.overlay-menu .columns:nth-child(2) {
+    transition-delay: 0s;
 }
 
-span:hover,
-span:focus {
-    opacity: 0.6;
+.overlay-menu.open .columns:nth-child(2) {
+    transition-delay: 1.25s;
 }
 
-#navy {
-    display: none;
+
+.overlay-menu ul {
+    font-size: 1.5rem;
+}
+
+.overlay-menu ul li {
+    padding: 1rem;
 }
 
 
@@ -108,24 +154,36 @@ span:focus {
 
 /* ------------ start of header --------- */
 
-#section-a {
-    height: 80vh;
-    background-image: url("images/main-backdraft.jpg");
-    background-size: cover;
+
+#bdaft {
+    position: relative;
+    text-align: center;
 
 }
 
-#topper {
+#mbdaft {
+    width: 100%;
+    height: 70vh;
+}
 
-    color: #f1f1f1;
-    font-size: 1.2rem;
-    margin: 7.5rem 1.2rem 0 1.2rem;
+#topper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EDEAE0;
     z-index: 1;
 
 }
 
+#topper h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    margin: 0 1.1rem 0 1.1rem;
+}
+
 #dt {
-    margin: 1.2rem 2rem 0 2rem;
+    margin: 2rem 2rem 0 2rem;
 }
 
 #burger {
@@ -141,11 +199,19 @@ span:focus {
 }
 
 #section-b h2,
-#section-b h3 {
+#section-b p {
     margin-bottom: 2rem;
 }
 
 /* --------------- end of Our story section ----------------- */
+
+/* ---------------- start of invitation ---------------------- */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------- end of invitation --------------------- */
 
 /* ----------------  start of gallery (carousel) -------------- */
 
@@ -160,29 +226,27 @@ span:focus {
 /* ------------- start of getting there --------------------- */
 
 #section-d {
-    margin: 3rem 1.2rem 3rem 1.2rem;
+    margin: 2rem 1.2rem 3rem 1.2rem;
 }
 
-#section-d h2,
+#section-d h2 {
+    margin-bottom: 3rem;
+}
+
 #section-d h3 {
-    margin-bottom: 1.5rem;
+    margin: 2rem 0 .8rem 0;
 }
 
 /* ------------- end of getting there ------------------------ */
 
-/* -------------- start of FAQs ----------------------- */
-#section-e {
-    margin: 3rem 1.2rem 3rem 1.2rem
-}
-
-
-/* -------------- end of FAQs -------------------------- */
 
 /* --------------- start of invite greet ------------------------- */
 
 #section-f {
-    background-color: #c08081;
-    padding: 1.5rem 0 1.2rem 0;
+    font-family: 'Kaushan Script', cursive;
+    color: #F3EDE0;
+    background-color: #6B7A40;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 /* --------------- end of invite greet --------------------- */
@@ -212,5 +276,6 @@ span:focus {
 /* ---------------- start of footer ------------------- */
 
 #section-g {
-    margin: 1rem 1.2rem 1rem 1.2rem
+    font-size: .8rem;
+    margin: .5rem 1.2rem 1rem .5rem
 }

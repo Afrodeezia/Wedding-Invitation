@@ -27,7 +27,7 @@ function closeNav() {
   }
 
   function faqsCloseNav() {
-    window.scrollTo(0,1500);
+    window.scrollTo(0,1600);
     document.getElementById("myNav").style.width = "0%";
     
   }
@@ -36,7 +36,7 @@ function closeNav() {
 
  //----------------- NAVBAR STICKY -------------------------------
   // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction(); scrollFunction();};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -66,9 +66,6 @@ function scrollWin(){
 //----------------- SCROLL TOP TOP BUTTON -----------------------
 
 
-window.onscroll = function() {
-  scrollFunction();
-}
 
 function scrollFunction() {
   if(document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200){
@@ -83,3 +80,10 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
+// ----------- burger button and overlay -----------------
+
+$(".menu-icon").click(function() {
+  $(this).toggleClass("active");
+  $(".overlay-menu").toggleClass("open");
+});
