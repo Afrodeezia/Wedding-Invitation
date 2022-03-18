@@ -24,157 +24,87 @@ h2 {
 
 /* --------- start of nav bar ------------ */
 
-nav {
-
-    color: #2e2e2e;
-    font-size: 0.2rem;
+#toggle {
     position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 200;
-}
-
-.menu-icon {
-    background-color: #304453;
-    box-shadow: 0 7px 12px rgb(0 0 0 / 0.4);
-    border-radius: 7px;
-    top: 1rem;
-    right: 1rem;
+    top: 20px;
+    right: 20px;
     width: 60px;
-    height: 50px;
-    margin: 0 0 0 auto;
-    position: relative;
+    height: 60px;
+    background: #03a9f4;
     cursor: pointer;
-    transition: background 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+
 }
 
-
-
-.menu-icon span,
-.menu-icon span:before,
-.menu-icon span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 3px;
-    width: 40px;
-    background: #EDEAE0;
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    display: block;
+#toggle::before {
     content: '';
-    transition: all 0.5s ease-in-out;
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-5px);
+    transition: 0.2s;
 }
 
-.menu-icon span:before {
-    left: 0;
-    top: -10px;
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(5px);
+    transition: 0.2s;
 }
 
-.menu-icon span:after {
-    left: 0;
-    top: 10px;
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
 }
 
-.menu-icon.active {
-    background: #304453;
+#toggle.active::after {
+    transform: translate(0px) rotate(-45deg);
 }
 
-.menu-icon.active span {
-    background-color: transparent;
-}
-
-.menu-icon.active span:before,
-.menu-icon.active span:after {
-    top: 0;
-}
-
-.menu-icon.active span:before {
-    transform: rotate(135deg);
-}
-
-.menu-icon.active span:after {
-    transform: rotate(-135deg);
-}
-
-
-
-/* Menu */
-
-.overlay-menu {
-    background: rgba(48, 68, 83, 0.9);
-    color: #EDEAE0;
+#overlay {
     position: fixed;
-    left: 0;
     top: 0;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    left: -100%;
     width: 100%;
-    padding: 50px 0;
-    opacity: 0;
-    text-align: center;
-    transform: translateY(-100%);
-    transition: all 0.5s;
-    z-index: 5;
-}
-
-.overlay-menu.open {
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-.overlay-menu .columns {
-    transform: translateY(5%);
-    opacity: 0;
-    transition: all 0.4s;
-    transition-delay: 0s;
-}
-
-.overlay-menu.open .columns {
-    transition: all 1s;
-    transition-delay: 1s;
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-.overlay-menu .columns:nth-child(2) {
-    transition-delay: 0s;
-}
-
-.overlay-menu.open .columns:nth-child(2) {
-    transition-delay: 1.25s;
-}
-
-
-.overlay-menu ul {
-    font-size: 2rem;
+    height: 100vh;
+    background: #003147;
+    transition: 0.5s;
+    z-index: 299;
 
 }
 
-.overlay-menu li {
-    transition: all 0.5s ease;
-    cursor: pointer;
+#overlay.active {
+    left: 0px;
 }
 
-.overlay-menu li:hover {
-    opacity: 0.1;
+#overlay ul {
+    position: relative;
+    margin-top: 50px;
 }
 
-.columns h2 {
-    padding-bottom: 1.5rem;
-    font-size: 3rem;
+#overlay ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 40px;
 }
 
-.overlay-menu ul li {
-    padding: 1rem;
+#overlay ul li:hover {
+    background: #03a9f4;
 }
 
-.columns {
-    margin-top: 160px;
+#overlay ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
-
 
 
 /* ------------ end of nav bar ------------- */

@@ -1,14 +1,31 @@
 //------------------ OVERLAY ------------------------------
-  $(".menu-icon").click(function() {
-    $(this).toggleClass("active");
-    $(".overlay-menu").toggleClass("open");
-  });
+const toggle = document.getElementById('toggle');
+const sidebar = document.getElementById('overlay');
+
+document.onclick = function(e) {
+    if(e.target.id !== 'overlay' && e.target.id !== 'toggle' )
+    {
+      toggle.classList.remove('active');
+      overlay.classList.remove('active')
+    }
+}
+
+toggle.onclick = function(){
+    toggle.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
+
+  
+
+ 
 
 
 
   function storyCloseNav() {
     window.scrollTo(0,400);
-    document.getElementsByClassName("overlay-menu").style.width = "0%";
+    
+    
+    
     
   }
 
