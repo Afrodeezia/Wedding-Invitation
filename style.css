@@ -36,10 +36,12 @@ nav {
 }
 
 .menu-icon {
-
-    top: 0.5rem;
+    background-color: #304453;
+    box-shadow: 0 7px 12px rgb(0 0 0 / 0.4);
+    border-radius: 7px;
+    top: 1rem;
     right: 1rem;
-    width: 50px;
+    width: 60px;
     height: 50px;
     margin: 0 0 0 auto;
     position: relative;
@@ -47,13 +49,15 @@ nav {
     transition: background 0.5s;
 }
 
+
+
 .menu-icon span,
 .menu-icon span:before,
 .menu-icon span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 4px;
-    width: 45px;
+    height: 3px;
+    width: 40px;
     background: #EDEAE0;
     position: absolute;
     left: 15%;
@@ -94,11 +98,13 @@ nav {
     transform: rotate(-135deg);
 }
 
+
+
 /* Menu */
 
 .overlay-menu {
     background: rgba(48, 68, 83, 0.9);
-    color: #ffffff;
+    color: #EDEAE0;
     position: fixed;
     left: 0;
     top: 0;
@@ -143,11 +149,30 @@ nav {
 
 
 .overlay-menu ul {
-    font-size: 1.5rem;
+    font-size: 2rem;
+
+}
+
+.overlay-menu li {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.overlay-menu li:hover {
+    opacity: 0.1;
+}
+
+.columns h2 {
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
 }
 
 .overlay-menu ul li {
     padding: 1rem;
+}
+
+.columns {
+    margin-top: 160px;
 }
 
 
@@ -267,11 +292,14 @@ nav {
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 0 7px 12px rgb(0 0 0 / 0.4);
+    transition: all 1s ease;
 }
 
 #myBtn:hover {
-    background-color: #555;
+    opacity: 0.7;
 }
+
 
 /* ---------------- end of scroll to top button -------------------- */
 /* ---------------- start of footer ------------------- */

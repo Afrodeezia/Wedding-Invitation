@@ -4,20 +4,16 @@
     $(".overlay-menu").toggleClass("open");
   });
 
-  function homeCloseNav() {
-    window.scrollTo(0,0);
-    document.getElementById("myNav").style.width = "0%";
-    
-  }
+
 
   function storyCloseNav() {
-    window.scrollTo(0,600);
-    document.getElementById("myNav").style.width = "0%";
+    window.scrollTo(0,400);
+    document.getElementsByClassName("overlay-menu").style.width = "0%";
     
   }
 
   function gettingCloseNav() {
-    window.scrollTo(0,1300);
+    window.scrollTo(0,700);
     document.getElementById("myNav").style.width = "0%";
     
   }
