@@ -10,14 +10,14 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hubballi', cursive;
     color: #36454F;
-    background-color: #F3EDE0;
+    background-color: #e9e6e2;
 }
 
 h2 {
-    font-family: 'Kaushan Script', cursive;
-    color: #745D20;
+    font-family: 'Hubballi', cursive;
+    color: #535e4b;
 }
 
 /* ------- end of base styles -------------- */
@@ -30,20 +30,26 @@ h2 {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #03a9f4;
+    background-color: #535e4b;
+    opacity: 0.5;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
     z-index: 300;
+}
 
+#toggle:hover {
+    opacity: 1;
 }
 
 #toggle::before {
     content: '';
     position: absolute;
-    width: 28px;
-    height: 2px;
+    width: 30px;
+    height: 4px;
     background: #fff;
     transform: translateY(-5px);
     transition: 0.2s;
@@ -52,8 +58,8 @@ h2 {
 #toggle::after {
     content: '';
     position: absolute;
-    width: 28px;
-    height: 2px;
+    width: 30px;
+    height: 4px;
     background: #fff;
     transform: translateY(5px);
     transition: 0.2s;
@@ -73,7 +79,8 @@ h2 {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: #003147;
+    background: #b5a4a3;
+    opacity: 0.9;
     transition: 0.5s;
     z-index: 299;
 
@@ -85,26 +92,29 @@ h2 {
 
 #overlay ul {
     position: relative;
-    margin-top: 50px;
+    margin-top: 20rem;
 }
 
 #overlay ul li {
     list-style: none;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 40px;
-}
-
-#overlay ul li:hover {
-    background: #03a9f4;
-}
-
-#overlay ul li a {
-    color: #fff;
+    color: #535e4b;
     text-decoration: none;
-    font-size: 1.5em;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
 }
+
+
+#overlay a {
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#overlay a:hover {
+    opacity: 0.5;
+}
+
+
+
 
 
 /* ------------ end of nav bar ------------- */
@@ -127,18 +137,21 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     color: #EDEAE0;
 
 }
 
 #topper h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 4rem;
-    margin: 0 1.1rem 0 1.1rem;
+    font-family: 'Courier Prime', monospace;
+    font-size: 6rem;
+    margin: 3rem 1.1rem 0 1.1rem;
 }
 
 #dt {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
     margin: 2rem 2rem 0 2rem;
 }
 
@@ -156,7 +169,12 @@ h2 {
 
 #section-b h2,
 #section-b p {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+#section-b h2 {
+    font-size: 2rem;
 }
 
 /* --------------- end of Our story section ----------------- */
@@ -182,26 +200,57 @@ h2 {
 /* ------------- start of getting there --------------------- */
 
 #section-d {
-    margin: 2rem 1.2rem 3rem 1.2rem;
+    margin: 2rem 1.2rem 4rem 1.2rem;
 }
 
 #section-d h2 {
-    margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
 #section-d h3 {
-    margin: 2rem 0 .8rem 0;
+    margin: 1rem 0 .8rem 0;
+    font-size: 1.5rem;
+}
+
+#section-d p {
+    font-size: 1.5rem;
+}
+
+.QR {
+    width: 60%;
+    height: auto;
+    margin: 1rem 0 0 0;
 }
 
 /* ------------- end of getting there ------------------------ */
+
+/* --------------- start of gift guide ---------------------- */
+#section-e {
+    font-size: 1.5rem;
+    border-top: 2px solid #b5a4a3;
+}
+
+#section-e h2 {
+    margin: 3rem 0 .8rem 0;
+}
+
+#section-e p {
+    margin: 0 1.2rem 1rem 1.2rem;
+}
+
+#section-e h3 {
+    margin: 3.5rem 0 0 0;
+}
+
+/* ---------------- end of gift guide ---------------------- */
 
 
 /* --------------- start of invite greet ------------------------- */
 
 #section-f {
-    font-family: 'Kaushan Script', cursive;
     color: #F3EDE0;
-    background-color: #6B7A40;
+    font-size: 1.5rem;
+    background-color: #b5a4a3;
     padding: 0.5rem 0 0.5rem 0;
 }
 
@@ -213,11 +262,12 @@ h2 {
     display: "none";
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 3;
     border: none;
     outline: none;
-    background-color: rgba(48, 68, 83, 0.9);
+    background-color: #535e4b;
+    opacity: 0.7;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -227,7 +277,7 @@ h2 {
 }
 
 #myBtn:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -235,6 +285,6 @@ h2 {
 /* ---------------- start of footer ------------------- */
 
 #section-g {
-    font-size: .8rem;
+
     margin: .5rem 1.2rem 1rem .5rem
 }

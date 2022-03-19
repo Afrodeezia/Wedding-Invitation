@@ -2,45 +2,36 @@
 const toggle = document.getElementById('toggle');
 const sidebar = document.getElementById('overlay');
 
-document.onclick = function(e) {
-    if(e.target.id !== 'overlay' && e.target.id !== 'toggle' )
-    {
-      toggle.classList.remove('active');
-      overlay.classList.remove('active')
-    }
-}
 
 toggle.onclick = function(){
     toggle.classList.toggle('active');
     overlay.classList.toggle('active');
 }
 
-  
 
+document.onclick = function(e) {
+  if(e.target.id !== 'overlay' && e.target.id !== 'toggle' )
+  {
+    toggle.classList.remove('active');
+    overlay.classList.remove('active')
+  }
+}
  
-
-
-
   function storyCloseNav() {
-    window.scrollTo(0,400);
-    
-    
-    
-    
+    window.scrollTo(0,400);  
   }
 
   function gettingCloseNav() {
-    window.scrollTo(0,700);
-    document.getElementById("myNav").style.width = "0%";
-    
+    window.scrollTo(0,750); 
   }
 
   function faqsCloseNav() {
-    window.scrollTo(0,1600);
-    document.getElementById("myNav").style.width = "0%";
-    
+    window.scrollTo(0,1600); 
   }
 
+  function giftCloseNav() {
+    window.scrollTo(0,2350);
+  }
 
 //----------------- SCROLL TOP TOP BUTTON -----------------------
 

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Hubballi&family=Patua+One&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,10 +28,11 @@
       
       <div id="overlay">
           <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
-              
+              <li><a onclick="storyCloseNav() ">Our Story</a></li>
+              <li><a onclick="gettingCloseNav()">invitation</a></li>
+              <li><a onclick="faqsCloseNav()">Getting There</a></li>
+              <li><a onclick="giftCloseNav()">Gift Guide</a></li>
+
           </ul>
           </div>
     
@@ -40,7 +41,7 @@
        <section id="bdaft">
         <img src="images/main-backdraft.jpg" alt="main-backdraft" id="mbdaft">
         <div id="topper">
-           <h1>Khing & Marco</h1>
+           <h1>K  |  M</h1>
            <h3 id="dt">04.09.2022 </h3>
         </div>
        </section>
@@ -64,7 +65,7 @@
 
         <!-- start of invitation  -->
             <section id="invi">
-                <img src="images/invitation.png" alt="invitation" class="responsive">
+                <img src="images/invitation.png" href="" alt="invitation" class="responsive">
 
             </section>
         <!-- end of invitation -->
@@ -79,29 +80,51 @@
 
         <!-- start of getting there section-->
         <section id="section-d">
+            
             <h2>Getting There</h2>
             <h3>Ceremony and Reception</h3>
             <p>Lola Cafe</p>
             <p>99 Scout Lozano St., Quezon City (Tomas Morato)</p>
+            
+            
+               <a href="https://www.google.com/maps/place/L%C5%8Dla+Cafe/@14.6300869,121.0303277,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b64c20211533:0x2b40bc33d4b591e!8m2!3d14.6300927!4d121.0325179" target="_blank" rel="noopener noreferrer"> 
+                   <img src="images/locCode.png" alt="QR code" class="QR"></a>
+           
 
             <h3>Gentle Reminder</h3>
             <p>Safety First. Please arrive an hour early as there will 
                 be free onsite covid testing. </p>
 
-            <h3>In lieu of Gifts</h3>
-            <p>In lieu of traditional gifts, monetary gifts are graciously accepted</p>
-
         </section>
         <!-- end of getting there section-->
+
+        <!-- start of gift guide-->
+        <section id="section-e">
+            <h2>Gift Guide</h2>
+            <p>In this time of pandemic your presence in our wedding is already
+                a gift. But if you really wish to give as we get married a monetary
+                gift for our future will be appreciated.
+            </p>
+            <h3>BPI</h3>
+            <img src="images/BpiQR.png" alt="BPI QR code" class="QR">
+            <p>Acct. Name: Marco Paulo Angelo Roldan</p>
+            <p>Acct. Number: 4559411839</p>
+
+            <h3 id="gcash">GCash</h3>
+            <img src="images/khingQR.png" alt="Gcash QR code" class="QR">
+            <p>Acct. Name: Khris Zalamea</p>
+            <p>Acct. Number: 09276127068 </p>
+            
+        </section>
 
     
 
         <!-- start invite message -->
         <section id="section-f">
-            <h3>WE'RE SO EXCITED</h3>
-            <h3>TO CELEBRATE WITH YOU</h3>
-            <h3>SEE YOU!</h3>
-            <h3>#KEMEKEME</h3>
+            <h3>We're so excited</h3>
+            <h3>to celebrate with you</h3>
+            <h3>See you!</h3>
+            <h3>#MarKhingthisday</h3>
 
         </section>
         <!-- end of invite message -->
