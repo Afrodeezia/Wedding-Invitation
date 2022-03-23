@@ -10,13 +10,15 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Hubballi', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
     color: #36454F;
     background-color: #e9e6e2;
 }
 
 h2 {
-    font-family: 'Hubballi', cursive;
+    font-weight: 400;
     color: #535e4b;
 }
 
@@ -286,5 +288,10 @@ h2 {
 
 #section-g {
 
-    margin: .5rem 1.2rem 1rem .5rem
+    margin: .5rem 1.2rem 1rem .5rem;
+
+}
+
+#section-g p {
+    font-size: 1.3rem;
 }
