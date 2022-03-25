@@ -44,6 +44,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 7px 12px rgb(0 0 0 / 0.4);
     transition: all 1s ease;
     z-index: 300;
 }
@@ -106,7 +107,9 @@ h2 {
     list-style: none;
     color: #535e4b;
     text-decoration: none;
-    font-size: 2rem;
+    font-family: mainFont;
+    font-size: 5rem;
+    font-weight: 400;
     margin: 1rem 0 1rem 0;
 }
 
@@ -172,17 +175,19 @@ h2 {
 /* ----------- start of Our story section ---------------- */
 
 #section-b {
-    margin: 3rem 1.2rem 3rem 1.2rem;
+    margin: 3.5rem 3rem 3rem 3rem;
 }
 
-#section-b h2,
+
 #section-b p {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
 }
 
 #section-b h2 {
     font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 /* --------------- end of Our story section ----------------- */
@@ -349,11 +354,12 @@ li {
 /* ------------- start of getting there --------------------- */
 
 #section-d {
-    margin: 2rem 1.2rem 4rem 1.2rem;
+    margin: 3rem 2rem 4rem 2rem;
 }
 
 #section-d h2 {
     font-size: 2rem;
+    margin: 0 0 2.5rem 0;
 }
 
 #section-d h3 {
@@ -366,29 +372,44 @@ li {
 }
 
 .QR {
-    width: 60%;
+    width: 50%;
+    max-width: 175px;
     height: auto;
-    margin: 1rem 0 0 0;
+    margin: 1.5rem 0 0 0;
+}
+
+.reminder-seats {
+    margin: 3rem 0 0 0;
+
 }
 
 /* ------------- end of getting there ------------------------ */
 
 /* --------------- start of gift guide ---------------------- */
 #section-e {
-    font-size: 1.5rem;
+
     border-top: 2px solid #b5a4a3;
+
 }
+
+#e-container {
+    font-size: 1.5rem;
+    margin: 1rem 3rem 2rem 3rem;
+}
+
 
 #section-e h2 {
     margin: 3rem 0 .8rem 0;
+
 }
 
-#section-e p {
-    margin: 0 1.2rem 1rem 1.2rem;
-}
 
 #section-e h3 {
     margin: 3.5rem 0 0 0;
+}
+
+.name-acct {
+    margin: 1rem 0 0 0;
 }
 
 /* ---------------- end of gift guide ---------------------- */
@@ -442,4 +463,50 @@ li {
 
 #section-g p {
     font-size: 1.3rem;
+}
+
+/* ------------------- media queries ----------------------------------------- */
+
+@media (min-width: 700px) {
+    #topper h1 {
+
+        font-size: 7rem;
+
+    }
+
+    #dt {
+
+        font-size: 2rem;
+
+    }
+
+    #section-b,
+    #section-d,
+    #e-container {
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    #topper h1 {
+
+        font-size: 8rem;
+
+    }
+
+    #dt {
+
+        font-size: 2.5rem;
+
+    }
+
+    #section-b,
+    #section-d,
+    #e-container {
+        margin-right: 8rem;
+        margin-left: 8rem;
+    }
+
+
 }

@@ -26,11 +26,11 @@ document.onclick = function(e) {
   }
 
   function faqsCloseNav() {
-    window.scrollTo(0,1600); 
+    window.scrollTo(0,1400); 
   }
 
   function giftCloseNav() {
-    window.scrollTo(0,2350);
+    window.scrollTo(0,2050);
   }
 
 //----------------- SCROLL TOP TOP BUTTON -----------------------
@@ -50,6 +50,7 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
 
 
 
