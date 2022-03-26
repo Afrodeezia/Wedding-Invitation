@@ -27,6 +27,10 @@ h2 {
     color: #535e4b;
 }
 
+
+
+
+
 /* ------- end of base styles -------------- */
 
 /* --------- start of nav bar ------------ */
@@ -175,7 +179,8 @@ h2 {
 /* ----------- start of Our story section ---------------- */
 
 #section-b {
-    margin: 3.5rem 3rem 3rem 3rem;
+    max-width: 805px;
+    padding-bottom: 1rem;
 }
 
 
@@ -187,7 +192,7 @@ h2 {
 #section-b h2 {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
 /* --------------- end of Our story section ----------------- */
@@ -354,7 +359,7 @@ li {
 /* ------------- start of getting there --------------------- */
 
 #section-d {
-    margin: 3rem 2rem 4rem 2rem;
+    padding: 3rem 0 3rem 0;
 }
 
 #section-d h2 {
@@ -389,13 +394,12 @@ li {
 #section-e {
 
     border-top: 2px solid #b5a4a3;
-
-}
-
-#e-container {
     font-size: 1.5rem;
-    margin: 1rem 3rem 2rem 3rem;
+    padding-bottom: 2rem;
+
+
 }
+
 
 
 #section-e h2 {
@@ -465,12 +469,20 @@ li {
     font-size: 1.3rem;
 }
 
+/* ------------- singit base styles ---------------------------- */
+
+.container {
+    margin: auto;
+    max-width: 624px;
+}
+
 /* ------------------- media queries ----------------------------------------- */
 
 @media (min-width: 700px) {
     #topper h1 {
 
         font-size: 7rem;
+        line-height: 11rem;
 
     }
 
@@ -480,18 +492,18 @@ li {
 
     }
 
-    #section-b,
-    #section-d,
-    #e-container {
-        margin-right: 6rem;
-        margin-left: 6rem;
+    .grid {
+        margin: 0 5rem 0 5rem;
     }
+
+
 }
 
 @media (min-width: 1000px) {
     #topper h1 {
 
         font-size: 8rem;
+        line-height: 13rem;
 
     }
 
@@ -501,12 +513,14 @@ li {
 
     }
 
-    #section-b,
-    #section-d,
-    #e-container {
-        margin-right: 8rem;
-        margin-left: 8rem;
+
+
+
+}
+
+@media (min-width: 1200px) {
+    #topper h1 {
+        font-size: 8.5rem;
+        line-height: 15rem;
     }
-
-
 }
