@@ -1,6 +1,6 @@
 @font-face {
     font-family: mainFont;
-    src: url(/fonts/BrittanySignature.ttf);
+    src: url(./fonts/BrittanySignature.ttf);
 }
 
 * {
@@ -311,21 +311,21 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-image: url("/images/carousel-1.jpg");
+    background-image: url("./images/carousel-1.jpg");
     background-size: cover;
 
 }
 
 .carousel__slide:nth-child(2) {
-    background-image: url("/images/carousel-2.jpg");
+    background-image: url("./images/carousel-2.jpg");
 }
 
 .carousel__slide:nth-child(3) {
-    background-image: url("/images/carousel-3.jpg");
+    background-image: url("./images/carousel-3.jpg");
 }
 
 .carousel__slide:nth-child(4) {
-    background-image: url("/images/carousel-4.jpg");
+    background-image: url("./images/carousel-4.jpg");
 }
 
 .carousel__slide:before {
