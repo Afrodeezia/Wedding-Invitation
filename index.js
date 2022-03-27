@@ -18,19 +18,19 @@ document.onclick = function(e) {
 }
  
   function storyCloseNav() {
-    window.scrollTo(0,400);  
+    document.getElementById('section-b').scrollIntoView();  
   }
 
   function gettingCloseNav() {
-    window.scrollTo(0,750); 
+    document.getElementById('invi').scrollIntoView(); 
   }
 
   function faqsCloseNav() {
-    window.scrollTo(0,1400); 
+    document.getElementById('section-d').scrollIntoView(); 
   }
 
   function giftCloseNav() {
-    window.scrollTo(0,2050);
+    document.getElementById('section-e').scrollIntoView(); 
   }
 
 //----------------- SCROLL TOP TOP BUTTON -----------------------

@@ -151,6 +151,7 @@ h2 {
     width: 160%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
 
 
 }
@@ -208,6 +209,8 @@ h2 {
 /* ---------------- start of invitation ---------------------- */
 .responsive {
     width: 100%;
+    max-width: 1150px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
 
@@ -283,7 +286,11 @@ li {
 .carousel {
     position: relative;
     padding-top: 75%;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
     filter: drop-shadow(0 0 10px #0003);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     perspective: 100px;
 }
 
@@ -397,11 +404,14 @@ li {
 }
 
 /* ------------- end of getting there ------------------------ */
+.divide {
+    border-top: 2px solid #b5a4a3;
+}
 
 /* --------------- start of gift guide ---------------------- */
 #section-e {
 
-    border-top: 2px solid #b5a4a3;
+
     font-size: 1.5rem;
     padding-bottom: 2rem;
 
