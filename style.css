@@ -27,6 +27,10 @@ h2 {
     color: #535e4b;
 }
 
+.grid {
+    margin: 0 3rem 0 3rem;
+}
+
 
 
 
@@ -143,8 +147,12 @@ h2 {
 }
 
 #mbdaft {
-    width: 100%;
-    height: 70vh;
+    display: block;
+    width: 160%;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 #topper {
@@ -153,21 +161,21 @@ h2 {
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-    color: #EDEAE0;
+    color: #d4ac74;
 
 }
 
 #topper h1 {
     font-family: mainFont;
-    font-size: 9em;
-    line-height: 9rem;
-    margin: 3rem 9rem 0 9rem;
+    font-size: 6.5em;
+    line-height: 3rem;
+    margin: 3rem 11rem 0 11rem;
 }
 
 #dt {
 
     font-size: 1.7rem;
-    margin: 2rem 2rem 0 2rem;
+    margin: 4rem 2rem 0 2rem;
 }
 
 #burger {
@@ -180,19 +188,19 @@ h2 {
 
 #section-b {
     max-width: 805px;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 
 #section-b p {
     font-size: 1.5rem;
-    margin: 0 2rem 2rem 2rem;
+    margin-bottom: 2rem;
 }
 
 #section-b h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
-    margin: 2rem 0 2rem 0;
+    margin: 4rem 0 2rem 0;
 }
 
 /* --------------- end of Our story section ----------------- */
@@ -200,7 +208,7 @@ h2 {
 /* ---------------- start of invitation ---------------------- */
 .responsive {
     width: 100%;
-    height: auto;
+
 }
 
 /* ----------------- end of invitation --------------------- */
@@ -296,21 +304,21 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-image: url("/images/gallery-1.jpg");
+    background-image: url("/images/carousel-1.jpg");
     background-size: cover;
 
 }
 
 .carousel__slide:nth-child(2) {
-    background-image: url("/images/main-backdraft.jpg");
+    background-image: url("/images/carousel-2.jpg");
 }
 
 .carousel__slide:nth-child(3) {
-    background-image: url("/images/invitation.png");
+    background-image: url("/images/carousel-3.jpg");
 }
 
 .carousel__slide:nth-child(4) {
-    background-image: url("/images/locCode.png");
+    background-image: url("/images/carousel-4.jpg");
 }
 
 .carousel__slide:before {
@@ -333,7 +341,7 @@ li {
 .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
@@ -472,7 +480,7 @@ li {
 /* ------------- singit base styles ---------------------------- */
 
 .container {
-    margin: auto;
+    margin: 3rem auto 2rem auto;
     max-width: 624px;
 }
 
@@ -481,14 +489,15 @@ li {
 @media (min-width: 700px) {
     #topper h1 {
 
-        font-size: 7rem;
-        line-height: 11rem;
+        font-size: 9rem;
+        line-height: 8rem;
+
 
     }
 
     #dt {
 
-        font-size: 2rem;
+        font-size: 2.5rem;
 
     }
 
@@ -503,7 +512,7 @@ li {
     #topper h1 {
 
         font-size: 8rem;
-        line-height: 13rem;
+        line-height: 9rem;
 
     }
 
@@ -513,14 +522,37 @@ li {
 
     }
 
+    #mbdaft {
+
+        width: 100%;
 
 
 
+    }
 }
 
 @media (min-width: 1200px) {
     #topper h1 {
-        font-size: 8.5rem;
-        line-height: 15rem;
+        font-size: 10rem;
+        line-height: 11rem;
+    }
+
+    #dt {
+
+        font-size: 3rem;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    #topper h1 {
+        font-size: 12rem;
+        line-height: 11rem;
+    }
+
+    #dt {
+
+        font-size: 3rem;
+
     }
 }
