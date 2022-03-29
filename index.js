@@ -52,5 +52,26 @@ function topFunction() {
 }
 
 
+//---------- carousel ----------------------
 
+$(document).ready(function(){
+  $('.img-slide').slick({
+    autoplay: true,
+    slideToShow: 1,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    speed: 2000,
+    infinite: true,
+    loop: true
+  });
+});
 
+//------------- smooth scroll --------------
+
+import smoothscroll from 'smoothscroll-polyfill';
+// or if linting/typescript complains
+import * as smoothscroll from 'smoothscroll-polyfill';
+
+// kick off the polyfill!
+smoothscroll.polyfill();

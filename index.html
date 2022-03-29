@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Philosopher:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -81,27 +83,23 @@
         <!-- start of gallery section (carousel) -->
         <section class="carousel">
 
-            <ol class="carousel__viewport">
-              <li id="carousel__slide1"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-              </li>
-
-              <li id="carousel__slide2"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-            </li>
-
-              <li id="carousel__slide3"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                </li>
-
-              <li id="carousel__slide4"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>  
-              </li>
-           
+            
+                <div class="img-area">
+                    <div class="img-slide">
+                    <div class="single-img">
+                        <img class="responsive" src="images/carousel-1.jpg" alt="1st picture">
+                    </div>
+                    <div class="single-img">
+                        <img class="responsive" src="images/carousel-2.jpg" alt="2nd picture">
+                    </div>
+                    <div class="single-img">
+                        <img class="responsive" src="images/carousel-3.jpg" alt="3rd picture">
+                    </div>
+                    <div class="single-img">
+                        <img class="responsive" src="images/carousel-4.jpg" alt="4th picture">
+                    </div>
+                    </div>
+                </div>
           </section>
         <!-- end of gallery section (carousel)-->
         
@@ -180,6 +178,7 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="slick.min.js"></script>
     
 
 </body>
